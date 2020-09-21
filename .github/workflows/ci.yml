@@ -26,17 +26,10 @@ jobs:
       - uses: actions/checkout@v1
       - name: deploy on EC2
         run: |
-<<<<<<< HEAD
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
           sudo ./aws/install
           aws --version
-=======
-        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-        unzip awscliv2.zip
-        sudo ./aws/install
-        aws --version
->>>>>>> 38fef5efe5abb32601ef7ae365cf1b0e36356fbb
 
   # test:
 
